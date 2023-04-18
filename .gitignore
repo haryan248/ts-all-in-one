@@ -1,0 +1,10 @@
+node_modules
+.sass-cache
+.idea
+.DS_Store
+.history/
+.history/*
+.vscode/
+.vscode/*
+.cache
+.gradle
