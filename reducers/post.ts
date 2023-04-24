@@ -1,8 +1,12 @@
-const initialState = [];
+import { Reducer } from "react";
+import { AddPostAction, AddPostData } from "../actions/post";
 
-const postReducer = (prevState = initialState, action) => { // 새로운 state 만들어주기
+const initialState: AddPostData[] = [];
+
+const postReducer: Reducer<AddPostData[], AddPostAction> = (prevState = initialState, action) => {
+  // 새로운 state 만들어주기
   switch (action.type) {
-    case 'ADD_POST':
+    case "ADD_POST":
       return [...prevState, action.data];
     default:
       return prevState;
